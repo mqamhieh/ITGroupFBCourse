@@ -8,7 +8,7 @@ body {
 .content {
 
     width : 1280px;
-    max-width: 98%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -20,6 +20,6 @@ body {
     width :100% ;
 }
 
-.clearfix{
+.clear-fix{
     clear: both;
 }
