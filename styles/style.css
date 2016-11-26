@@ -1,0 +1,25 @@
+body{
+padding: 0px;
+    margin: 0px
+}
+*{
+    box-sizing: border-box;
+}
+.content_rapper {
+    background: blue;
+}
+.content {
+    width: 1280px;
+    max-width: 98%;
+    background: red;
+    margin: center;
+}
+.pull_left{
+    float: left;
+}
+.block{
+    width: 100%;
+}
+.clear-left{
+    float: clear;
+}
