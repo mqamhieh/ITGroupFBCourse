@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.content_wrapper{
+
+}
+
+.content{
+    width: 1280px;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.pull-left{
+    float: left;
+}
+
+.block{
+    width: 100%;
+}
+
+.clearfix{
+    clear: both;
+}
