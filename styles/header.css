@@ -9,4 +9,19 @@ header .logo a {
     background-repeat: no-repeat;
     width: 100%;
     height: 20px;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    text-decoration: none;
 }
