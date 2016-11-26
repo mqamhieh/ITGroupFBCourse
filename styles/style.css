@@ -1,7 +1,8 @@
-body { margin: 0; padding:0; font-family: 'Montserrat', sans-serif; }
+body { margin: 0; padding:0; }
 
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content {
@@ -23,5 +24,12 @@ body { margin: 0; padding:0; font-family: 'Montserrat', sans-serif; }
 }
 
 .button {
-
+    background: #fff;
+    border: 2px solid #e3e8f0;
+    text-transform: uppercase;
+    border-radius: 16px;
+    font-size: 11px;
+    padding: 6px 14px;
+    font-weight: 700;
+    color: #343e5c;
 }
