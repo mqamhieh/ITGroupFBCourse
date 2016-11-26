@@ -1,0 +1,23 @@
+body { margin: 0; padding:0; }
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+}
+
+.block {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
