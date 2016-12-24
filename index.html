@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="stylesheet" href="styles/header.css" >
+    <link rel="stylesheet" href="styles/main-slider.css" >
     <title></title>
 </head>
 <body>
@@ -48,6 +51,29 @@
             </div>
         </div>
     </header>
+    <div class="main-slider content-wrapper">
+        <div class="content">
+            <div class="sub-menu">
+                <ul class="pull-left">
+                    <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                    <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                    <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                    <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                    <li><a class="sub-menu-item" href="#">Projects</a></li>
+                </ul>
+
+                <form class="search-wrapper pull-right">
+                    <i class="fa fa-search"></i>
+                    <input type="search"
+                           required
+                           placeholder="I'm looking for..." />
+                </form>
+                <a class="sub-menu-item pull-right" href="#">Support</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="slider"></div>
+        </div>
+    </div>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </body>
 </html>
