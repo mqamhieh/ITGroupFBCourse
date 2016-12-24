@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="stylesheet" href="styles/header.css" >
     <link rel="stylesheet" href="styles/main-slider.css" >
+    <link rel="stylesheet" href="styles/search-results.css" >
     <title></title>
 </head>
 <body>
@@ -128,14 +129,61 @@
         </div>
     </div>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <div class="search-results content-wrapper">
+        <div class="content">
+            <form class="breadcrumb">
+                <div>
+                    <div class="search-group pull-left">
+                        <div class="select field">
+                            <label>Sort By:</label>
+                            <select>
+                                <option>Best Match</option>
+                                <option>Best Price</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="search-group pull-left">
+                        <div class="field">
+                            <label>Keywords</label>
+                            <input type="search" placeholder="e.g. Tablet" />
+                        </div>
+                        <div class="field">
+                            <label>Price</label>
+                        <span class="range">
+                           <input type="number" placeholder="10" min="0" />
+                            <span>-</span>
+                           <input type="number" placeholder="1000" min="0" />
+                        </span>
+                        </div>
+                        <div class="field">
+                            <label class="checkbox">
+                                <i class="fa fa-check-circle check-icon"></i>
+                                <i class="fa fa-circle no-check-icon"></i>
+                                <span>Free Shiping</span>
+                                <input type="checkbox" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="search-group pull-right">
+                        <div class="select field">
+                            <label>Ship to:</label>
+                            <select>
+                                <option>USA</option>
+                                <option>Palestine</option>
+                                <option>Europe</option>
+                                <option>Australia</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </body>
 </html>

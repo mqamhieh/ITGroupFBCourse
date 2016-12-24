@@ -38,3 +38,33 @@ body {
     font-weight: 700;
     color: #343e5c;
 }
+
+.checkbox {
+    cursor: pointer;
+}
+
+.checkbox input[type='checkbox'] {
+    visibility: hidden;
+}
+
+.checkbox i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox span {
+    vertical-align: middle;
+    padding-left: 6px;
+}
+
+.checkbox .check-icon {
+    display: none;
+}
+
+.checkbox.checked .no-check-icon {
+    display: none;
+}
+
+.checkbox.checked .check-icon {
+    display: inline-block;
+}

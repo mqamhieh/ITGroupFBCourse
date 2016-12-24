@@ -1,0 +1,87 @@
+.breadcrumb {
+    margin: 30px 0 500px;
+    background: white;
+    border-radius: 8px;
+}
+
+.breadcrumb .search-group {
+    padding: 15px 5px 0;
+    height: 62px;
+}
+
+.breadcrumb .search-group:first-child {
+    border-right: 2px solid #f2f2f2;
+}
+
+.breadcrumb .search-group:last-child {
+    border-left: 2px solid #f2f2f2;
+}
+
+.breadcrumb .field {
+    float: left;
+    padding: 0 25px;
+}
+
+.breadcrumb label {
+    color: #a1a8bd;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-right: 5px;
+}
+
+.breadcrumb .field input[type='text'],
+.breadcrumb .field input[type='number'],
+.breadcrumb .field input[type='search'] {
+    background: #f0f2f7;
+    border: 1px solid #e3e8f0;
+    border-radius: 18px;
+    padding: 6px 8px 7px;
+    width: 170px;
+}
+
+.breadcrumb .field input[type='number'] {
+    width: 70px;
+}
+
+.breadcrumb .checkbox .check-icon {
+    color: #00e2aa;
+}
+
+.breadcrumb .checkbox span {
+    text-transform: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.breadcrumb .checkbox i {
+    font-size: 24px;
+}
+
+.breadcrumb select {
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 120px;
+    margin-left: 5px;
+    padding: 8px 0 8px 5px;
+}
+
+.breadcrumb select::-ms-expand {
+    display: none;
+}
+
+.breadcrumb .field.select {
+    position: relative;
+}
+
+.breadcrumb .field.select i {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    font-size: 12px;
+    margin-top: -6px;
+    color: #c2c5ce;
+}
