@@ -16,4 +16,26 @@ $(document).ready(function () {
             $(this).parents(".checkbox").removeClass("checked");
         }
     });
+
+    $(".accordion .accordion-body").hide();
+
+    $(".accordion .title").on("click", function () {
+        var thisAccordion = $(this).parents(".accordion");
+        var wasOpen = thisAccordion.hasClass('open');
+        closeAccordion($(".accordion.open"));
+
+        if (!wasOpen) {
+            openAccordion(thisAccordion);
+        }
+    });
+
+    var openAccordion = function(accordion) {
+        accordion.addClass("open");
+        accordion.find(".accordion-body").stop().slideDown(400);
+    };
+
+    var closeAccordion = function(accordion) {
+        accordion.removeClass("open");
+        accordion.find(".accordion-body").stop().slideUp(400);
+    };
 });
