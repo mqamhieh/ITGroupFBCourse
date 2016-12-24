@@ -40,3 +40,53 @@
     left: 22px;
     font-size: 14px;
 }
+
+.slider-wrapper {
+    background: #1c1e23;
+}
+
+.slider-wrapper .slide1 {
+    background-image: url(../images/mobile.png);
+}
+
+.slider-wrapper .slide {
+    padding: 59px 130px 70px;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-position-x: 90%;
+    background-position-y: 15%;
+}
+
+.slider-wrapper .slide .text {
+    color: white;
+    width: 47%;
+}
+
+.slider-wrapper .slide .text h1 {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.slider-wrapper .cta {
+    background: #2754eb;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 14px 0;
+    text-align: center;
+    width: 170px;
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.slider-wrapper .cta:hover {
+    color: #2754eb;
+    background: white;
+}
+
+.slider-wrapper p {
+    height: 110px;
+}
