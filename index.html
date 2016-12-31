@@ -158,9 +158,10 @@
                         </div>
                         <div class="field">
                             <label class="checkbox">
-                                <i class="fa fa-check-circle check-icon"></i>
-                                <i class="fa fa-circle no-check-icon"></i>
-                                <span>Free Shiping</span>
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                <span class="text">Free Shiping</span>
                                 <input type="checkbox" />
                             </label>
                         </div>
@@ -268,14 +269,78 @@
                 <div class="filters">
                     <div class="filter">
                         <div class="filter-title">Available</div>
-                        <div class="filter-content"></div>
+                        <div class="filter-content">
+                            <div class="radio_input">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="availability"
+                                           value="in_storage">
+                                    In Storage
+                                    <span class="count">43</span>
+                                    <div class="clearfix"></div>
+                                </label>
+                            </div>
+                            <div class="radio_input">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="availability"
+                                           value="online_shop">
+                                    In Online-Shop
+                                    <span class="count">18</span>
+                                    <div class="clearfix"></div>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="filter">
                         <div class="filter-title">
                             <span>Brands</span>
-                            <a href="#">All</a>
+                            <a href="javascript:" onclick="selectAllCheckbox(event)">All</a>
                         </div>
-                        <div class="filter-content"></div>
+                        <div class="filter-content">
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Apple</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">JBL</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Bose</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Nest</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="filters">

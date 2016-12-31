@@ -1,7 +1,9 @@
 /**
  * Created by Mohamed on 11/26/2016.
  */
+
 $(document).ready(function () {
+
     $(".slider").slick({
         dots: true,
         prevArrow: '<i class="fa fa-chevron-left arrow-left"></i>',
@@ -15,6 +17,18 @@ $(document).ready(function () {
         else {
             $(this).parents(".checkbox").removeClass("checked");
         }
+    });
+
+    $("[type='radio']").on('change', function () {
+        var fieldName = $(this).attr('name');
+
+        $("[type='radio'][name='" + fieldName + "']")
+            .parents(".radio_input.selected")
+            .removeClass("selected");
+
+        $(this)
+            .parents(".radio_input")
+            .addClass("selected");
     });
 
     $(".accordion .accordion-body").hide();
@@ -39,3 +53,10 @@ $(document).ready(function () {
         accordion.find(".accordion-body").stop().slideUp(400);
     };
 });
+
+window.selectAllCheckbox = function (event) {
+    $(event.target)
+        .parents(".filters")
+        .find("[type='checkbox']:not(:checked)")
+        .click();
+};

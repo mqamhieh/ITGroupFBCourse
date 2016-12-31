@@ -57,15 +57,27 @@ body {
     padding-left: 6px;
 }
 
-.checkbox .check-icon {
-    display: none;
+.checkbox .icon {
+    display: inline-block;
+    background: #f0f2f7;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 26px;
+    height: 26px;
+    color: #fff;
 }
 
-.checkbox.checked .no-check-icon {
-    display: none;
+.checkbox.checked .icon {
+    background: #00e2aa;
 }
 
-.checkbox.checked .check-icon {
+.checkbox .icon i {
+    display: none;
+    font-size: 15px;
+    vertical-align: initial;
+}
+
+.checkbox.checked .icon i {
     display: inline-block;
 }
 
@@ -80,4 +92,37 @@ body {
 
 .accordion.open i {
     transform: rotate(90deg);
+}
+
+.radio_input label {
+    cursor: pointer;
+}
+
+.radio_input input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.radio_input .icon {
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #e4e8f0;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-right: 4px;
+}
+
+.radio_input .icon i {
+    display: none;
+    position: absolute;
+    font-size: 8px;
+    left: 4px;
+    top: 3px;
+    color: #00deea;
+}
+
+.radio_input.selected .icon i {
+    display: inline-block;
 }

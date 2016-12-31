@@ -49,14 +49,10 @@
     color: #00e2aa;
 }
 
-.breadcrumb .checkbox span {
+.breadcrumb .checkbox span.text {
     text-transform: none;
     color: #333;
     font-size: 14px;
-}
-
-.breadcrumb .checkbox i {
-    font-size: 24px;
 }
 
 .breadcrumb select {
@@ -139,4 +135,42 @@
 .search-results .filter-title a {
     float: right;
     color: #2754eb;
+}
+
+.search-results .radio_input,
+.search-results .checkbox_input {
+    font-size: 13px;
+    color: #343e5c;
+    font-weight: 700;
+    padding: 11px 19px;
+}
+
+.search-results .checkbox .icon {
+    border: 2px solid #e4e8f0;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    text-align: center;
+    line-height: 14px;
+}
+
+.search-results .checkbox .icon i {
+    font-size: 12px;
+}
+
+.search-results .checkbox.checked .icon {
+    background: #00e2aa;
+    border-color: #00e2aa;
+}
+.search-results .filter .count {
+    float: right;
+    font-size: 12px;
+    color: #b8bfd3;
+}
+
+.search-results .radio_input label {
+    display: block;
 }
