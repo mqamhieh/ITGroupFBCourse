@@ -277,6 +277,7 @@
                                     </span>
                                     <input type="radio"
                                            name="availability"
+                                           checked="checked"
                                            value="in_storage">
                                     In Storage
                                     <span class="count">43</span>
@@ -301,7 +302,8 @@
                     <div class="filter">
                         <div class="filter-title">
                             <span>Brands</span>
-                            <a href="javascript:" onclick="selectAllCheckbox(event)">All</a>
+                            <a href="javascript:"
+                               onclick="selectAllCheckbox(event)">All</a>
                         </div>
                         <div class="filter-content">
                             <div class="checkbox_input">
@@ -347,15 +349,87 @@
                     <div class="filter">
                         <div class="filter-title">
                             <span>Condition</span>
-                            <a href="#">All</a>
+                            <a href="javascript:"
+                               onclick="selectAllCheckbox(event)">See All</a>
                         </div>
-                        <div class="filter-content"></div>
+                        <div class="filter-content">
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">New</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Manufacturer Refurbished</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Seller Refurbished</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Used</span>
+                                    <input type="checkbox" checked="checked" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">For Parts or not Working</span>
+                                    <input type="checkbox" checked="checked" />
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="filters">
                     <div class="filter">
                         <div class="filter-title">Delivery Options</div>
-                        <div class="filter-content"></div>
+                        <div class="filter-content no-padding">
+                            <div class="radio_input width_50">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="delivery"
+                                           checked="checked"
+                                           value="free">
+                                    Free
+                                </label>
+                            </div>
+                            <div class="radio_input width_50">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="delivery"
+                                           value="paid">
+                                    $4.99
+                                </label>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
                 </div>
             </div>

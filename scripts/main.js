@@ -10,16 +10,18 @@ $(document).ready(function () {
         nextArrow: '<i class="fa fa-chevron-right arrow-right"></i>'
     });
 
-    $("[type='checkbox']").on('change', function () {
+    var checkboxInputHandler = function () {
         if ($(this).is(":checked")) {
             $(this).parents(".checkbox").addClass("checked");
         }
         else {
             $(this).parents(".checkbox").removeClass("checked");
         }
-    });
+    };
 
-    $("[type='radio']").on('change', function () {
+    $("[type='checkbox']").on('change', checkboxInputHandler);
+
+    var radioInputHandler = function () {
         var fieldName = $(this).attr('name');
 
         $("[type='radio'][name='" + fieldName + "']")
@@ -29,7 +31,12 @@ $(document).ready(function () {
         $(this)
             .parents(".radio_input")
             .addClass("selected");
-    });
+    };
+
+    $("[type='radio']").on('change', radioInputHandler);
+
+    radioInputHandler.apply($("[type='radio']:checked"));
+    checkboxInputHandler.apply($("[type='checkbox']:checked"));
 
     $(".accordion .accordion-body").hide();
 

@@ -105,6 +105,15 @@
     font-weight: 700;
 }
 
+.search-results .filter .filter-content {
+    border-bottom: 1px solid #f0f2f7;
+    padding-bottom: 10px;
+}
+
+.search-results .filter:last-child .filter-content {
+    border-bottom: none;
+}
+
 .search-results .accordion .title i {
     float: right;
     margin-top: 2px;
@@ -143,6 +152,16 @@
     color: #343e5c;
     font-weight: 700;
     padding: 11px 19px;
+}
+
+.search-results .radio_input.width_50 {
+    width: 50%;
+    float: left;
+    border-right: 1px solid #f0f2f7;
+}
+
+.search-results .radio_input.width_50:last-child {
+    border-right: none;
 }
 
 .search-results .checkbox .icon {

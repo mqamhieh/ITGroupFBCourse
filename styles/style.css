@@ -45,6 +45,7 @@ body {
 
 .checkbox input[type='checkbox'] {
     visibility: hidden;
+    position: absolute;
 }
 
 .checkbox i {
@@ -125,4 +126,8 @@ body {
 
 .radio_input.selected .icon i {
     display: inline-block;
+}
+
+.no-padding {
+    padding: 0 !important;
 }
