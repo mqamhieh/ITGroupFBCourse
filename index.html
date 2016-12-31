@@ -4,52 +4,305 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="stylesheet" href="styles/header.css" >
+    <link rel="stylesheet" href="styles/main-slider.css" >
+    <link rel="stylesheet" href="styles/search-results.css" >
     <title></title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="content-wrapper">
-                <div class="content">
-
-                        <div class="drop-list-btn pull-left">
-                            <i class="fa fa-bars" aria-hidden="true" ></i>
+        <div class="menu-wrapper content-wrapper">
+            <div class="content">
+                <nav>
+                    <div class="drop-list-btn pull-left">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="logo pull-left">
+                        <a href="./">&nbsp;</a>
+                    </div>
+                    <div class="menu pull-left">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Delivery & Payment</a></li>
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-actions pull-right">
+                        <div class="cart user-action pull-left">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="text">Cart</span>
+                            <span class="count">0</span>
                         </div>
-
-                        <div class="logo pull-left">
-                            <a href="./">&nbsp;</a>
+                        <div class="user-action pull-left">
+                            <button class="button"
+                                    type="button">
+                                Sign In
+                            </button>
                         </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main-slider content-wrapper">
+        <div class="content">
+            <div class="sub-menu">
+                <ul class="pull-left">
+                    <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                    <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                    <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                    <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                    <li><a class="sub-menu-item" href="#">Projects</a></li>
+                </ul>
 
-                        <div class="menu pull-left">
-                            <ul>
-                                <li><a href="#">Home</a> </li>
-                                <li><a href="#">Devices</a> </li>
-                                <li><a href="#">Delivery &Payment</a> </li>
-                                <li><a href="#">Guarantee</a> </li>
-                                <li><a href="#">About</a> </li>
-                            </ul>
+                <form class="search-wrapper pull-right">
+                    <i class="fa fa-search"></i>
+                    <input type="search"
+                           required
+                           placeholder="I'm looking for..." />
+                </form>
+                <a class="sub-menu-item pull-right" href="#">Support</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-wrapper content-wrapper">
+        <div class="content">
+            <div class="slider">
+                <div class="slide slide1">
+                    <div class="text pull-left">
+                        <h1>
+                            iPhone 6 32Gb
+                            <br/>
+                            Black
+                        </h1>
+                        <p>At first, for some time, I was not able to answer him one word;
+                            but as he had taken me in his arms I held fast by him,
+                            or I should have fallen to the ground.</p>
+                        <div class="actions">
+                            <a href="#" class="cta">Buy Now</a>
                         </div>
-
-                        <div class="user-actions pull-left">
-                            <div class="user-action">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span class="text">Cart</span>
-                                <span class="count">0</span>
-                                <button type="button">Sign In</button>
-                            </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="slide slide1">
+                    <div class="text pull-left">
+                        <h1>
+                            iPhone 6 32Gb
+                            <br/>
+                            Black
+                        </h1>
+                        <p>At first, for some time, I was not able to answer him one word;
+                            but as he had taken me in his arms I held fast by him,
+                            or I should have fallen to the ground.</p>
+                        <div class="actions">
+                            <a href="#" class="cta">Buy Now</a>
                         </div>
-
-                        <div class="clearfix"></div>
-
-
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="slide slide1">
+                    <div class="text pull-left">
+                        <h1>
+                            iPhone 6 32Gb
+                            <br/>
+                            Black
+                        </h1>
+                        <p>At first, for some time, I was not able to answer him one word;
+                            but as he had taken me in his arms I held fast by him,
+                            or I should have fallen to the ground.</p>
+                        <div class="actions">
+                            <a href="#" class="cta">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        </div>
+    </div>
+
+    <div class="search-results content-wrapper">
+        <div class="content">
+            <form class="breadcrumb">
+                <div>
+                    <div class="search-group pull-left">
+                        <div class="select field">
+                            <label>Sort By:</label>
+                            <select>
+                                <option>Best Match</option>
+                                <option>Best Price</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="search-group pull-left">
+                        <div class="field">
+                            <label>Keywords</label>
+                            <input type="search" placeholder="e.g. Tablet" />
+                        </div>
+                        <div class="field">
+                            <label>Price</label>
+                        <span class="range">
+                           <input type="number" placeholder="10" min="0" />
+                            <span>-</span>
+                           <input type="number" placeholder="1000" min="0" />
+                        </span>
+                        </div>
+                        <div class="field">
+                            <label class="checkbox">
+                                <i class="fa fa-check-circle check-icon"></i>
+                                <i class="fa fa-circle no-check-icon"></i>
+                                <span>Free Shiping</span>
+                                <input type="checkbox" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="search-group pull-right">
+                        <div class="select field">
+                            <label>Ship to:</label>
+                            <select>
+                                <option>USA</option>
+                                <option>Palestine</option>
+                                <option>Europe</option>
+                                <option>Australia</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </form>
+
+            <div class="sideBar pull-left">
+                <div class="filters">
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Top Sales</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Brand Focus</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Hi-Tech</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Home</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Sale</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-title">Available</div>
+                        <div class="filter-content"></div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-title">
+                            <span>Brands</span>
+                            <a href="#">All</a>
+                        </div>
+                        <div class="filter-content"></div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-title">
+                            <span>Condition</span>
+                            <a href="#">All</a>
+                        </div>
+                        <div class="filter-content"></div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-title">Delivery Options</div>
+                        <div class="filter-content"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-items pull-left">
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </body>
 </html>
