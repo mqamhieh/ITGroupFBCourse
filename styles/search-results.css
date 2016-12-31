@@ -193,3 +193,155 @@
 .search-results .radio_input label {
     display: block;
 }
+
+.search-items  {
+    width: 78.7%;
+}
+
+.search-items .product {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1c1e23;
+    transition: transform 0.2s ease-in;
+    transform: scale(1);
+}
+
+.search-items .product:hover {
+    transform: scale(1.03);
+}
+
+.search-items .product .product_content {
+    background: white;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.8);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 339px;
+    height: 339px;
+}
+
+.search-items .product .image {
+    width: 100%;
+    padding: 37% 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 30px 0;
+}
+
+.search-items .product .actions {
+    display: none;
+
+}
+
+.search-items .product .details {
+    float: left;
+    width: 100%;
+    padding: 0 15px 35px;
+}
+
+.search-items .product .details .name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.search-items .product .details .color {
+    text-transform: uppercase;
+    color: #b8bfd3;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.search-items .product .details .price {
+    color: #343e5c;
+}
+
+.search-items .product.double {
+    width: 50%;
+}
+
+.search-items .product.double .image {
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 271px;
+}
+
+.search-items .product.double .actions {
+    display: block;
+    float: right;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 16px 17px 0 0;
+}
+
+.search-items .product.double .actions span {
+    float: left;
+    width: 50%;
+    border: 2px solid #f0f2f7;
+    padding: 8px 0;
+    color: #3a405b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.search-items .product.double .actions span {
+    border-radius: 20px 0 0 20px;
+    border-right-width: 1px;
+}
+
+.search-items .product.double .actions span:last-child {
+    border-radius: 0 20px 20px 0;
+    border-left-width: 1px;
+}
+
+.search-items .product.double .details {
+    text-align: left;
+    padding: 15px 20px;
+    width: 60%;
+}
+
+.search-items .product.double .details .color {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.search-items .product.double .details .price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1c1e23;
+    color: white;
+    font-size: 13px;
+    padding: 4px 8px 5px;
+    border-radius: 5px;
+}
+
+.search-items .product.highlight .image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-size: cover;
+}
+
+.search-items .product.highlight .details {
+    position: relative;
+    padding-top: 30px;
+}
+
+.search-items .product.highlight .details .color {
+    display: none;
+}
+
+.search-items .product.highlight .details .price {
+    opacity: 0.5;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
