@@ -24,7 +24,7 @@
 }
 
 .best-seller-section .search-items .product {
-    width: 20%;
+    width: 100%;
     margin: 0;
     padding: 0 30px;
     border-left: 1px solid #f0f2f7;
@@ -32,4 +32,8 @@
 
 .best-seller-section .search-items .product:first-child {
     border-left: none;
+}
+
+.best-seller-section .slick-arrow {
+    display: none !important;
 }

@@ -148,3 +148,9 @@
 .slider-wrapper .slick-dots li button {
     display: none;
 }
+
+@media (max-width: 769px) {
+    .main-slider input[type='search'] {
+        width: 200px;
+    }
+}

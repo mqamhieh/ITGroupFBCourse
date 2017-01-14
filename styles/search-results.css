@@ -68,7 +68,7 @@
 }
 
 .breadcrumb select::-ms-expand {
-    display: none;
+    display: none;.
 }
 
 .breadcrumb .field.select {
@@ -391,4 +391,34 @@
     background: white;
     box-shadow: 1px 10px 26px -2px rgba(0, 0, 0, 0.3);
     color: #b9bed1;
+}
+
+
+@media (max-width: 769px) {
+    .breadcrumb .search-group {
+        float: left !important;
+        border: none !important;
+        padding: 5px 0;
+        height: 40px;
+    }
+
+    .breadcrumb .field {
+        padding: 0 20px;
+    }
+
+    .search-items .product {
+        width: 50%;
+    }
+
+    .search-items .product.double {
+        width: 100%;
+    }
+
+    .search-results .sideBar {
+        width: 28.3%;
+    }
+
+    .search-items {
+        width: 71.7%;
+    }
 }

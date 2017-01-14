@@ -145,3 +145,11 @@ label.checkbox {
     border-radius: 8px;
     box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.3);
 }
+
+
+@media (max-width: 769px) {
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

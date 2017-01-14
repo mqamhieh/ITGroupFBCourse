@@ -74,3 +74,28 @@ footer .policy a {
 footer .policy_links {
     float: right;
 }
+
+
+@media (max-width: 769px) {
+    footer .buttons {
+        padding: 50px 20px;
+    }
+
+    footer .logo {
+        margin-bottom: 20px;
+    }
+
+    footer ul {
+        clear: left;
+        text-align: left;
+        width: 80%;
+    }
+
+    footer ul li a {
+        padding-left: 0;
+    }
+
+    footer .social_links {
+        width: 20%;
+    }
+}
