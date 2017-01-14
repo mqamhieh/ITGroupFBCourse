@@ -43,6 +43,10 @@ body {
     cursor: pointer;
 }
 
+label.checkbox {
+    margin: 0;
+}
+
 .checkbox input[type='checkbox'] {
     visibility: hidden;
     position: absolute;

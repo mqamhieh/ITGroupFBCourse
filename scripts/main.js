@@ -10,6 +10,36 @@ $(document).ready(function () {
         nextArrow: '<i class="fa fa-chevron-right arrow-right"></i>'
     });
 
+    $(".customers-list ul").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     var checkboxInputHandler = function () {
         if ($(this).is(":checked")) {
             $(this).parents(".checkbox").addClass("checked");

@@ -85,3 +85,20 @@ header .cart .count {
 .menu-wrapper {
     border-bottom: 1px solid #f0f2f7;
 }
+
+@media (max-width: 769px) {
+    header .logo {
+        width: 18%;
+    }
+
+    header .menu {
+        padding: 20px 0 20px 18px;
+        clear: left;
+        border-top: 1px solid #f0f2f7;
+    }
+
+    header .user-actions {
+        padding: 20px 20px 0;
+        border-top: 1px solid #f0f2f7;
+    }
+}

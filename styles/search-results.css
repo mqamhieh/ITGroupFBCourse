@@ -29,6 +29,7 @@
     text-transform: uppercase;
     line-height: 28px;
     margin-right: 5px;
+    margin-top: 0;
 }
 
 .breadcrumb .field input[type='text'],
