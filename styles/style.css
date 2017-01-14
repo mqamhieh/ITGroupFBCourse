@@ -1,0 +1,36 @@
+body { margin: 0; padding:0; }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+}
+
+.block {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.button {
+    background: #fff;
+    border: 2px solid #e3e8f0;
+    text-transform: uppercase;
+    border-radius: 16px;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin-top: -6px;
+    font-weight: 700;
+    color: #343e5c;
+}
