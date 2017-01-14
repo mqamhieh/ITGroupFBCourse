@@ -131,3 +131,13 @@ body {
 .no-padding {
     padding: 0 !important;
 }
+
+.stroke {
+    text-decoration: line-through;
+}
+
+.shadow-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.3);
+}
