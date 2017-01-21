@@ -422,3 +422,40 @@
         width: 71.7%;
     }
 }
+
+@media (max-width: 601px) {
+    .search-items .product,
+    .search-results .sideBar,
+    .search-items {
+        width: 100%;
+        padding: 0;
+    }
+
+    .search-items .product .product_content {
+        height: auto;
+        max-height: none;
+        min-height: 410px;
+    }
+
+    .search-items .product.double .actions {
+        width: 100%;
+    }
+
+    .search-items .product.double .actions {
+        width: 100%;
+        padding: 0 10px 10px;
+    }
+
+    .breadcrumb .search-group {
+        height: auto;
+        padding: 0;
+    }
+
+    .breadcrumb .field {
+        padding: 5px 0;
+    }
+
+    .breadcrumb select {
+        width: 190px;
+    }
+}
