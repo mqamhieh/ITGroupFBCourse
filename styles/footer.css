@@ -99,3 +99,21 @@ footer .policy_links {
         width: 20%;
     }
 }
+
+@media (max-width: 601px) {
+    footer .footer_line {
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    footer ul {
+        width: 100%;
+    }
+
+    footer .social_links {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 27px;
+    }
+}

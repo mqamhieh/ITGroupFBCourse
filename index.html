@@ -24,11 +24,14 @@
         <div class="menu-wrapper content-wrapper">
             <div class="content">
                 <nav>
-                    <div class="drop-list-btn pull-left">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </div>
-                    <div class="logo pull-left">
-                        <a href="./">&nbsp;</a>
+                    <div class="sub-header">
+                        <div class="drop-list-btn pull-left"
+                             onclick="$('.menu-mobile').toggle()">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="logo pull-left">
+                            <a href="./">&nbsp;</a>
+                        </div>
                     </div>
                     <div class="menu pull-left">
                         <ul>
@@ -38,6 +41,23 @@
                             <li><a href="#">Guarantee</a></li>
                             <li><a href="#">About Us</a></li>
                         </ul>
+                    </div>
+                    <div class="menu-mobile">
+                        <ul class="pull-left">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Delivery & Payment</a></li>
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                        <ul class="pull-left">
+                            <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                            <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                            <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                            <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                            <li><a class="sub-menu-item" href="#">Projects</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
                     </div>
                     <div class="user-actions pull-right">
                         <div class="cart user-action pull-left">
@@ -83,6 +103,7 @@
         <div class="content">
             <div class="slider">
                 <div class="slide slide1">
+                    <div class="shadow"></div>
                     <div class="text pull-left">
                         <h1>
                             iPhone 6 32Gb

@@ -65,7 +65,12 @@
 
 .slider-wrapper .slide .text {
     color: white;
+    position: relative;
     width: 47%;
+}
+
+.slider-wrapper .slide .shadow {
+    display: none;
 }
 
 .slider-wrapper .slide .text h1 {
@@ -152,5 +157,57 @@
 @media (max-width: 769px) {
     .main-slider input[type='search'] {
         width: 200px;
+    }
+}
+
+@media (max-width: 601px) {
+    .main-slider .sub-menu {
+        display: none;
+    }
+
+    .slider-wrapper .slide {
+        padding: 0;
+        position: relative;
+        background-position: 80%;
+        background-position-y: 22%;
+        background-size: 70%;
+        height: calc(100vh - 92px);
+    }
+
+    .slider-wrapper .slide .shadow {
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 300px;
+        background: linear-gradient(to top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    .slider-wrapper .slick-arrow {
+        display: none !important;
+    }
+
+    .slider-wrapper .slide .text {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+    }
+
+    .slider-wrapper .slide .text p {
+        display: none;
+    }
+
+    .slider-wrapper .slide .text h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .slider-wrapper .slide .text .actions {
+        padding: 0;
     }
 }

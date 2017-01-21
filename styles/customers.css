@@ -73,3 +73,25 @@
 .customers .slick-arrow {
     display: none !important;
 }
+
+
+@media (max-width: 601px) {
+    .customers .title h3 {
+        font-size: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .customers .title h4 {
+        padding: 0 20px;
+    }
+
+    .customers .customers-list p {
+        width: 100%;
+    }
+
+    .customers .customers-list .customer {
+        padding: 0;
+        text-align: center;
+    }
+}
