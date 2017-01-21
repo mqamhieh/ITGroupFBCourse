@@ -1,0 +1,39 @@
+.best-seller-section {
+    margin: 40px 0;
+}
+
+.best-seller-section .title {
+    border-bottom: 1px solid #f0f2f7;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 23px;
+}
+
+.best-seller-section .search-items {
+    width: 100%;
+}
+
+.best-seller-section .search-items .product .product_content {
+    box-shadow: none;
+    background: none;
+}
+
+.best-seller-section .search-items .product .stroke {
+    color: #b8bfd3;
+}
+
+.best-seller-section .search-items .product {
+    width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    border-left: 1px solid #f0f2f7;
+}
+
+.best-seller-section .search-items .product:first-child {
+    border-left: none;
+}
+
+.best-seller-section .slick-arrow {
+    display: none !important;
+}
