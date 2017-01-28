@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/nunjucks/browser/nunjucks.min.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
 
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/cart.js"></script>
+    <script type="text/javascript" src="scripts/signin.js"></script>
+
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="stylesheet" href="styles/header.css" >
     <link rel="stylesheet" href="styles/main-slider.css" >
@@ -35,7 +40,7 @@
                     </div>
                     <div class="menu pull-left">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./">Home</a></li>
                             <li><a href="#">Devices</a></li>
                             <li><a href="#">Delivery & Payment</a></li>
                             <li><a href="#">Guarantee</a></li>
@@ -63,10 +68,11 @@
                         <div class="cart user-action pull-left">
                             <i class="fa fa-shopping-cart"></i>
                             <span class="text">Cart</span>
-                            <span class="count">0</span>
+                            <span id="cart-count" class="count">0</span>
                         </div>
                         <div class="user-action pull-left">
                             <button class="button"
+                                    onclick="showSignInModal()"
                                     type="button">
                                 Sign In
                             </button>
@@ -460,248 +466,9 @@
                 </div>
             </div>
 
-            <div class="search-items pull-left">
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
+            <div id="products_search_list"
+                 class="search-items pull-left">
 
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product double">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product_2.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Pebble Time</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-                <a href="#" class="product highlight">
-                    <div class="product_content">
-                        <div class="image"
-                             style="background-image:url('images/product_3.jpg');"></div>
-                        <div class="details">
-                            <div class="line name">Nest Learning Thermostat, 3rd Generation</div>
-                            <div class="line color">Red</div>
-                            <div class="line price">$29.99</div>
-                        </div>
-                        <div class="actions">
-                            <span class="specs">16 GB</span>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
             </div>
 
             <div class="clearfix"></div>
@@ -733,7 +500,7 @@
                 <div class="title">Best Sellers</div>
                 <div class="items search-items">
                     <div>
-                        <a href="#" class="product">
+                        <a href="product.html" class="product">
                             <div class="product_content">
                                 <div class="image"
                                      style="background-image:url('images/product.jpg');"></div>
@@ -754,7 +521,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="product">
+                        <a href="product.html" class="product">
                             <div class="product_content">
                                 <div class="image"
                                      style="background-image:url('images/product.jpg');"></div>
@@ -775,7 +542,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="product">
+                        <a href="product.html" class="product">
                             <div class="product_content">
                                 <div class="image"
                                      style="background-image:url('images/product.jpg');"></div>
@@ -796,7 +563,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="product">
+                        <a href="product.html" class="product">
                             <div class="product_content">
                                 <div class="image"
                                      style="background-image:url('images/product.jpg');"></div>
@@ -817,7 +584,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="product">
+                        <a href="product.html" class="product">
                             <div class="product_content">
                                 <div class="image"
                                      style="background-image:url('images/product.jpg');"></div>
@@ -912,7 +679,7 @@
             <div class="buttons">
                 <div class="logo"></div>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">About Us</a></li>
@@ -937,6 +704,38 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade"
+         id="signin-modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Sign In
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Username or Email</label>
+                                <input type="email"
+                                        class="form-control"/>
+                            </div>
+                            <div class="col-xs-12">
+                                <label>Password</label>
+                                <input type="password"
+                                       class="form-control" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-sm">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </body>

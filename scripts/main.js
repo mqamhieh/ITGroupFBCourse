@@ -3,6 +3,16 @@
  */
 
 $(document).ready(function () {
+    shoppingCart.updateCartCount();
+
+    $.get("products.json", function (products) {
+        var html = nunjucks.render(
+            "templates/products.html",
+            { 'products': products }
+        );
+
+        $("#products_search_list").html(html);
+    });
 
     $(".slider").slick({
         dots: true,
