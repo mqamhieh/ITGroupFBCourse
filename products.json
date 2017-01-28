@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Pebble Time",
+    "color": "Red",
+    "price": "29.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "double": true,
+    "image": "images/product_2.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  },
+  {
+    "name": "Swatch",
+    "color": "Blue",
+    "price": "86.99",
+    "specs": "16 GB",
+    "image": "images/product.jpg"
+  }
+]
