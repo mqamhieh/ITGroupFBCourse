@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/nunjucks/browser/nunjucks.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/cart.js"></script>
+    <script type="text/javascript" src="scripts/signin.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" >
+    <link rel="stylesheet" href="styles/header.css" >
+    <link rel="stylesheet" href="styles/main-slider.css" >
+    <link rel="stylesheet" href="styles/search-results.css" >
+    <link rel="stylesheet" href="styles/best-sellers.css" >
+    <link rel="stylesheet" href="styles/customers.css" >
+    <link rel="stylesheet" href="styles/footer.css" >
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="menu-wrapper content-wrapper">
+            <div class="content">
+                <nav>
+                    <div class="sub-header">
+                        <div class="drop-list-btn pull-left"
+                             onclick="$('.menu-mobile').toggle()">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="logo pull-left">
+                            <a href="./">&nbsp;</a>
+                        </div>
+                    </div>
+                    <div class="menu pull-left">
+                        <ul>
+                            <li><a href="./">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Delivery & Payment</a></li>
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-mobile">
+                        <ul class="pull-left">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Delivery & Payment</a></li>
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                        <ul class="pull-left">
+                            <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                            <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                            <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                            <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                            <li><a class="sub-menu-item" href="#">Projects</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="user-actions pull-right">
+                        <div class="cart user-action pull-left">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="text">Cart</span>
+                            <span id="cart-count" class="count">0</span>
+                        </div>
+                        <div class="user-action pull-left">
+                            <button class="button"
+                                    onclick="showSignInModal()"
+                                    type="button">
+                                Sign In
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main-slider content-wrapper">
+        <div class="content">
+            <div class="sub-menu">
+                <ul class="pull-left">
+                    <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                    <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                    <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                    <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                    <li><a class="sub-menu-item" href="#">Projects</a></li>
+                </ul>
+
+                <form class="search-wrapper pull-right">
+                    <i class="fa fa-search"></i>
+                    <input type="search"
+                           required
+                           placeholder="I'm looking for..." />
+                </form>
+                <a class="sub-menu-item hidden-sm pull-right" href="#">Support</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-wrapper content-wrapper">
+        <div class="content">
+            <div class="slider">
+                <div class="slide slide1">
+                    <div class="shadow"></div>
+                    <div class="text pull-left">
+                        <h1>
+                            iPhone 6 32Gb
+                            <br/>
+                            Black
+                        </h1>
+                        <p>At first, for some time, I was not able to answer him one word;
+                            but as he had taken me in his arms I held fast by him,
+                            or I should have fallen to the ground.</p>
+                        <div class="actions">
+                            <a href="#" class="cta">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="slide slide1">
+                    <div class="text pull-left">
+                        <h1>
+                            iPhone 6 32Gb
+                            <br/>
+                            Black
+                        </h1>
+                        <p>At first, for some time, I was not able to answer him one word;
+                            but as he had taken me in his arms I held fast by him,
+                            or I should have fallen to the ground.</p>
+                        <div class="actions">
+                            <a href="#" class="cta">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="slide slide1">
+                    <div class="text pull-left">
+                        <h1>
+                            iPhone 6 32Gb
+                            <br/>
+                            Black
+                        </h1>
+                        <p>At first, for some time, I was not able to answer him one word;
+                            but as he had taken me in his arms I held fast by him,
+                            or I should have fallen to the ground.</p>
+                        <div class="actions">
+                            <a href="#" class="cta">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-results content-wrapper">
+        <div class="content">
+            <form class="breadcrumb">
+                <div>
+                    <div class="search-group pull-left">
+                        <div class="select field">
+                            <label>Sort By:</label>
+                            <select>
+                                <option>Best Match</option>
+                                <option>Best Price</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="search-group pull-left">
+                        <div class="field">
+                            <label>Keywords</label>
+                            <input type="search" placeholder="e.g. Tablet" />
+                        </div>
+                        <div class="field">
+                            <label>Price</label>
+                        <span class="range">
+                           <input type="number" placeholder="10" min="0" />
+                            <span>-</span>
+                           <input type="number" placeholder="1000" min="0" />
+                        </span>
+                        </div>
+                        <div class="field">
+                            <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                <span class="text">Free Shiping</span>
+                                <input type="checkbox" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="search-group pull-right">
+                        <div class="select field">
+                            <label>Ship to:</label>
+                            <select>
+                                <option>USA</option>
+                                <option>Palestine</option>
+                                <option>Europe</option>
+                                <option>Australia</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </form>
+
+            <div class="sideBar pull-left">
+                <div class="filters">
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Top Sales</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Brand Focus</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Hi-Tech</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Home</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span>Sale</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">Cell Phones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">TV. Audio</a></li>
+                                <li><a href="#">Video Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-title">Available</div>
+                        <div class="filter-content">
+                            <div class="radio_input">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="availability"
+                                           checked="checked"
+                                           value="in_storage">
+                                    In Storage
+                                    <span class="count">43</span>
+                                    <div class="clearfix"></div>
+                                </label>
+                            </div>
+                            <div class="radio_input">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="availability"
+                                           value="online_shop">
+                                    In Online-Shop
+                                    <span class="count">18</span>
+                                    <div class="clearfix"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-title">
+                            <span>Brands</span>
+                            <a href="javascript:"
+                               onclick="selectAllCheckbox(event)">All</a>
+                        </div>
+                        <div class="filter-content">
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Apple</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">JBL</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Bose</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Nest</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-title">
+                            <span>Condition</span>
+                            <a href="javascript:"
+                               onclick="selectAllCheckbox(event)">See All</a>
+                        </div>
+                        <div class="filter-content">
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">New</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Manufacturer Refurbished</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Seller Refurbished</span>
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">Used</span>
+                                    <input type="checkbox" checked="checked" />
+                                </label>
+                            </div>
+                            <div class="checkbox_input">
+                                <label class="checkbox">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                    <span class="text">For Parts or not Working</span>
+                                    <input type="checkbox" checked="checked" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-title">Delivery Options</div>
+                        <div class="filter-content no-padding">
+                            <div class="radio_input width_50">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="delivery"
+                                           checked="checked"
+                                           value="free">
+                                    Free
+                                </label>
+                            </div>
+                            <div class="radio_input width_50">
+                                <label>
+                                    <span class="icon">
+                                        <i class="fa fa-circle"></i>
+                                    </span>
+                                    <input type="radio"
+                                           name="delivery"
+                                           value="paid">
+                                    $4.99
+                                </label>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="products_search_list"
+                 class="search-items pull-left">
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="search-pagination">
+                <a href="#" class="navigation arrow-left">
+                    <i class="fa fa-chevron-left"></i>
+                </a>
+                <div class="pages">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#" class="selected">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                </div>
+                <a href="#" class="navigation arrow-right">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="best-seller content-wrapper">
+        <div class="content">
+            <div class="best-seller-section shadow-box">
+                <div class="title">Best Sellers</div>
+                <div class="items search-items">
+                    <div>
+                        <a href="product.html" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="product.html" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="product.html" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="product.html" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="product.html" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customers content-wrapper">
+        <div class="content">
+            <div class="testimonial">
+                <div class="title">
+                    <h3>What Our Customers Have to Say</h3>
+                    <h4>Couple of Words About This Stories Section</h4>
+                </div>
+                <div class="customers-list">
+                    <ul>
+                        <li>
+                            <div class="customer">
+                                <div class="info">
+                                    <div class="icon"
+                                         style="background-image: url('images/customer.png')"
+                                            ></div>
+                                    <div class="details">
+                                        <div class="name">Celia Fields</div>
+                                        <div class="position">UX Expert</div>
+                                    </div>
+                                </div>
+                                <p class="text">
+                                    This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="customer">
+                                <div class="info">
+                                    <div class="icon"
+                                         style="background-image: url('images/customer.png')"
+                                            ></div>
+                                    <div class="details">
+                                        <div class="name">Alexander Lee</div>
+                                        <div class="position">Founder</div>
+                                    </div>
+                                </div>
+                                <p class="text">
+                                    Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="customer">
+                                <div class="info">
+                                    <div class="icon"
+                                         style="background-image: url('images/customer.png')"
+                                            ></div>
+                                    <div class="details">
+                                        <div class="name">Lenora Sandoval</div>
+                                        <div class="position">Product Manager</div>
+                                    </div>
+                                </div>
+                                <p class="text">
+                                    This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="content-wrapper">
+        <div class="content">
+            <div class="buttons">
+                <div class="logo"></div>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="social_links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="policy">
+                <div class="footer_line">
+                    She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.
+                </div>
+                <div class="policy_links">
+                    <a href="#">Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade"
+         id="signin-modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Sign In
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Username or Email</label>
+                                <input type="email"
+                                        class="form-control"/>
+                            </div>
+                            <div class="col-xs-12">
+                                <label>Password</label>
+                                <input type="password"
+                                       class="form-control" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-sm">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</body>
+</html>
