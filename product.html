@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/cart.js"></script>
+    <script type="text/javascript" src="scripts/signin.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" >
+    <link rel="stylesheet" href="styles/header.css" >
+    <link rel="stylesheet" href="styles/main-slider.css" >
+    <link rel="stylesheet" href="styles/search-results.css" >
+    <link rel="stylesheet" href="styles/product-details.css" >
+    <link rel="stylesheet" href="styles/best-sellers.css" >
+    <link rel="stylesheet" href="styles/customers.css" >
+    <link rel="stylesheet" href="styles/footer.css" >
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="menu-wrapper content-wrapper">
+            <div class="content">
+                <nav>
+                    <div class="sub-header">
+                        <div class="drop-list-btn pull-left"
+                             onclick="$('.menu-mobile').toggle()">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="logo pull-left">
+                            <a href="./">&nbsp;</a>
+                        </div>
+                    </div>
+                    <div class="menu pull-left">
+                        <ul>
+                            <li><a href="./">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Delivery & Payment</a></li>
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-mobile">
+                        <ul class="pull-left">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Delivery & Payment</a></li>
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                        <ul class="pull-left">
+                            <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                            <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                            <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                            <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                            <li><a class="sub-menu-item" href="#">Projects</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="user-actions pull-right">
+                        <a class="cart user-action pull-left"
+                             href="./shopping_cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="text">Cart</span>
+                            <span id="cart-count" class="count">0</span>
+                        </a>
+                        <div class="user-action pull-left">
+                            <button class="button"
+                                    onclick="showSignInModal()"
+                                    type="button">
+                                Sign In
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main-slider content-wrapper">
+        <div class="content">
+            <div class="sub-menu">
+                <ul class="pull-left">
+                    <li><a class="sub-menu-item" href="#">Top Sales</a></li>
+                    <li><a class="sub-menu-item" href="#">Brand Focus</a></li>
+                    <li><a class="sub-menu-item selected" href="#">HI-Tech</a></li>
+                    <li><a class="sub-menu-item" href="#">Best Sellers</a></li>
+                    <li><a class="sub-menu-item" href="#">Projects</a></li>
+                </ul>
+
+                <form class="search-wrapper pull-right">
+                    <i class="fa fa-search"></i>
+                    <input type="search"
+                           required
+                           placeholder="I'm looking for..." />
+                </form>
+                <a class="sub-menu-item hidden-sm pull-right" href="#">Support</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details content-wrapper">
+        <div class="content">
+            <div class="product-details-section shadow-box">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product_image"
+                             style="background-image: url('images/product.jpg');">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <form action="index.html"
+                              name="product-details"
+                              onsubmit="return onAddToCart(event)">
+                            <input type="hidden" name="id" value="919846" />
+                            <div class="product-desc">
+                                <h1>Pebble Time</h1>
+                                <div class="price">
+                                    <span class="before text-muted">$98.00</span>
+                                    <span class="after">$45.00</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim magna id feugiat ultricies. In congue finibus nisl in ullamcorper. Etiam laoreet nibh non lorem scelerisque, eu lobortis turpis blandit. Nulla porttitor odio ante, sit amet tincidunt orci porta a. Integer malesuada odio odio, et molestie mi mattis eu. Morbi tincidunt elit urna, sed lobortis est sagittis dapibus. Nam mattis nunc convallis dolor tincidunt, non vulputate eros facilisis.</p>
+                                <div class="options">
+                                    <div class="option">
+                                        <div class="title">Ship From:</div>
+                                        <ul class="row">
+                                            <li class="col-xs-6 col-sm-3">
+                                                <div class="radio_input">
+                                                    <label>
+                                            <span class="icon">
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                                        <input type="radio"
+                                                               name="ship_from"
+                                                               value="china">
+                                                        China
+                                                        <div class="clearfix"></div>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="col-xs-6 col-sm-3">
+                                                <div class="radio_input">
+                                                    <label>
+                                            <span class="icon">
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                                        <input type="radio"
+                                                               name="ship_from"
+                                                               value="singapore">
+                                                        Singapore
+                                                        <div class="clearfix"></div>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="option">
+                                        <div class="title">Color:</div>
+                                        <ul class="row">
+                                            <li class="col-xs-4 col-sm-2">
+                                                <div class="color_option"
+                                                     style="background-image: url('images/product.jpg');">
+                                                </div>
+                                            </li>
+                                            <li class="col-xs-4 col-sm-2">
+                                                <div class="color_option"
+                                                     style="background-image: url('images/product.jpg');">
+                                                </div>
+                                            </li>
+                                            <li class="col-xs-4 col-sm-2">
+                                                <div class="color_option"
+                                                     style="background-image: url('images/product.jpg');">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-offset-8 col-sm-3">
+                                    <div class="cta-buttons">
+                                        <button type="submit"
+                                                class="btn btn-lg btn-primary btn-block text-uppercase">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="best-seller content-wrapper">
+        <div class="content">
+            <div class="best-seller-section shadow-box">
+                <div class="title">Best Sellers</div>
+                <div class="items search-items">
+                    <div>
+                        <a href="#" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="product">
+                            <div class="product_content">
+                                <div class="image"
+                                     style="background-image:url('images/product.jpg');"></div>
+                                <div class="details">
+                                    <div class="line name">Pebble Time</div>
+                                    <div class="line color">Red</div>
+                                    <div class="line price">
+                                        <span class="stroke">$40.00</span>
+                                        $29.99
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="specs">16 GB</span>
+                                    <span>Buy Now</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="content-wrapper">
+        <div class="content">
+            <div class="buttons">
+                <div class="logo"></div>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="./contact.html">Contacts</a></li>
+                </ul>
+                <div class="social_links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="policy">
+                <div class="footer_line">
+                    She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.
+                </div>
+                <div class="policy_links">
+                    <a href="#">Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade"
+         id="signin-modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Test
+                </div>
+                <div class="modal-body">
+                    Test
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-sm">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</body>
+</html>

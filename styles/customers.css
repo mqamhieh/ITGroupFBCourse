@@ -1,0 +1,97 @@
+.customers {
+    background: white;
+}
+
+.customers .title {
+    text-align: center;
+}
+
+.customers .title h3 {
+    margin: 0;
+    padding: 60px 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.customers .title h4 {
+    color: #b9bed1;
+    margin-top: 0;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.customers .customers-list {
+    padding: 40px 30px;
+}
+
+.customers .customers-list ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.customers .customers-list li {
+    float: left;
+    width: 33.33%;
+}
+
+.customers .customers-list .customer {
+    padding: 0 40px;
+}
+
+.customers .customers-list .icon {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.customers .customers-list .details {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 12px;
+}
+
+.customers .customers-list .position {
+    color: #b9bed1;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.customers .customers-list p {
+    width: 87%;
+    line-height: 22px;
+    margin-top: 26px;
+}
+
+.customers .slick-arrow {
+    display: none !important;
+}
+
+
+@media (max-width: 601px) {
+    .customers .title h3 {
+        font-size: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .customers .title h4 {
+        padding: 0 20px;
+    }
+
+    .customers .customers-list p {
+        width: 100%;
+    }
+
+    .customers .customers-list .customer {
+        padding: 0;
+        text-align: center;
+    }
+}

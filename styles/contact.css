@@ -1,0 +1,13 @@
+.contact-us {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-us .shadow-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-us input, .contact-us textarea {
+    margin-bottom: 10px;
+}

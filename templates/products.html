@@ -1,0 +1,26 @@
+{% for product in products %}
+<a href="product.html"
+   class="product {% if product.double %}double{% endif %}">
+    <div class="product_content">
+        <div class="card_front">
+            <div class="image"
+                 style="background-image:url({{ product.image }});"></div>
+            <div class="details">
+                <div class="line name">{{ product.name | truncate(16) }}</div>
+                <div class="line color">{{ product.color }}</div>
+                <div class="line price">${{ product.price }}</div>
+            </div>
+            <div class="actions">
+                <span class="specs">{{ product.specs }}</span>
+                <span>Buy Now</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="card_back hidden">
+            <br/>
+            <br/>
+            Coming Soon
+        </div>
+    </div>
+</a>
+{% endfor %}
