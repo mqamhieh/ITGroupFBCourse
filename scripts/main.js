@@ -5,6 +5,17 @@
 $(document).ready(function () {
     shoppingCart.updateCartCount();
 
+    window.onContactUsSubmit = function (event) {
+        var form = $(event.target);
+        var message = form.find("[name='message']").val();
+
+        if (!message) {
+            var isConfirmed = confirm("Are you sure you want to send without a message?");
+            return isConfirmed;
+        }
+        return true;
+    };
+
     $(".accordion").attr("tabindex", "0");
     $(".accordion").on("keydown", function (e) {
         switch (e.keyCode) {
