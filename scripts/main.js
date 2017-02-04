@@ -49,7 +49,7 @@ $(document).ready(function () {
 
         $("#products_search_list").html(html);
 
-        $(".product.double").on("mousemove", function () {
+        $(".product.double").off("mousemove").on("mousemove", function () {
             var $self = $(this);
             var $content = $self.find(".product_content");
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
             $self.data("canClose", false);
         });
 
-        $(".product.double").on("mouseout", function () {
+        $(".product.double").off("mousemove").on("mouseout", function () {
             var $self = $(this);
             var $content = $self.find(".product_content");
 
