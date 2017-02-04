@@ -153,3 +153,7 @@ label.checkbox {
         padding-right: 10px;
     }
 }
+
+.accordion:focus {
+    outline: none;
+}

@@ -210,6 +210,15 @@
     transform: scale(1);
 }
 
+.search-items .product .product_content {
+    transition: transform 0.2s ease-out;
+    transform: scaleX(1);
+}
+
+.search-items .product .product_content.flipped {
+    transform: scaleX(0);
+}
+
 .search-items .product:hover {
     transform: scale(1.03);
 }

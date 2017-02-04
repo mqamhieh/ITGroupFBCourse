@@ -5,6 +5,31 @@
 $(document).ready(function () {
     shoppingCart.updateCartCount();
 
+    $(".accordion").attr("tabindex", "0");
+    $(".accordion").on("keydown", function (e) {
+        switch (e.keyCode) {
+            case 13: // Enter
+                openAccordion($(this));
+                break;
+            case 27: // Esc
+                closeAccordion($(this));
+                break;
+            case 40: // Down Arrow
+                closeAccordion($(this));
+                openAccordion($(this).next(".accordion"));
+                event.stopPropagation();
+                event.preventDefault();
+                break;
+            case 38: // Up Arrow
+                closeAccordion($(this));
+                openAccordion($(this).prev(".accordion"));
+                event.stopPropagation();
+                event.preventDefault();
+                break;
+        }
+
+    });
+
     $.get("products.json", function (products) {
         var html = nunjucks.render(
             "templates/products.html",
@@ -12,6 +37,48 @@ $(document).ready(function () {
         );
 
         $("#products_search_list").html(html);
+
+        $(".product.double").on("mousemove", function () {
+            var $self = $(this);
+            var $content = $self.find(".product_content");
+
+            if (!$self.data("isAnimating")) {
+                $content.addClass("flipped");
+
+                setTimeout(function() {
+                    $content.find(".card_front").addClass("hidden");
+                    $content.find(".card_back").removeClass("hidden");
+                    $content.removeClass("flipped");
+                }, 200);
+            }
+
+            $self.data("isAnimating", true);
+            $self.data("canClose", false);
+        });
+
+        $(".product.double").on("mouseout", function () {
+            var $self = $(this);
+            var $content = $self.find(".product_content");
+
+            $self.data("canClose", true);
+
+            setTimeout(function () {
+                if ($self.data("canClose")) {
+                    setTimeout(function () {
+                        $content.addClass("flipped");
+
+                        setTimeout(function() {
+                            $content.find(".card_front").removeClass("hidden");
+                            $content.find(".card_back").addClass("hidden");
+                            $content.removeClass("flipped");
+                            setTimeout(function () {
+                                $self.data("isAnimating", false);
+                            }, 200);
+                        }, 200);
+                    }, 100);
+                }
+            }, 200);
+        });
     });
 
     $(".slider").slick({
@@ -118,7 +185,8 @@ $(document).ready(function () {
     });
 
     var openAccordion = function(accordion) {
-        accordion.addClass("open");
+        accordion.addClass("open")
+        accordion.focus();
         accordion.find(".accordion-body").stop().slideDown(400);
     };
 
